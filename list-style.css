@@ -130,21 +130,13 @@ ul li.checked::before {
     clear: both;
 }
 
-/* Style the input */
-input {
-    border: none;
-    width: 75%;
-    padding: 10px;
-    float: left;
-    font-size: 16px;
-}
-
 /* Style the "Add" button */
 .addBtn {
     padding: 10px;
     width: 25%;
     background: #d9d9d9;
     color: #555;
+    border-radius: 4px;
     float: left;
     text-align: center;
     font-size: 16px;
@@ -154,4 +146,25 @@ input {
 
 .addBtn:hover {
     background-color: #bbb;
+}
+
+/* Style the input */
+.schedule__input {
+    float: left;
+    display: block;
+    width: 70%;
+    height: 48px;
+    font-size: 16px;
+    color: #666666;
+    font-weight: 500;
+    background-color: #ffffff;
+    border: 2px solid #fafafa;
+    border-radius: 4px;
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    padding: 0 20px;
+    margin-right: 20px;
 }

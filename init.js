@@ -13,10 +13,9 @@
 //         .appendTo(li);
 // });
 
-(function () {
 
     // Create a "close" button and append it to each list item
-    var myNodelist = document.getElementsByTagName("Li");
+    var myNodelist = document.getElementsByClassName("schedule__item");
     var i;
     for (i = 0; i < myNodelist.length; i++) {
       var span = document.createElement("SPAN");
@@ -29,9 +28,12 @@
     // Click on a close button to hide the current list item
     var close = document.getElementsByClassName("close");
     var i;
+
+    // change this block
     for (i = 0; i < close.length; i++) {
       close[i].onclick = function() {
         var div = this.parentElement;
+        //myNodelist.parentNode.removeChild(span);
         div.style.display = "none";
       }
     }
@@ -71,7 +73,7 @@
       }
     }
 
-})();
+
 
 
 

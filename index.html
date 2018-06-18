@@ -10,20 +10,19 @@
 
   <body>
     <div class="container">
-      <div id="myDIV" class="header">
+      <div id="myDIV" class="schedule__header header">
         <h2 class="title">To Do List</h2>
-        <input type="text" id="myInput" placeholder="Title...">
+        <input type="text" id="myInput" class="schedule__input" placeholder="Add text...">
         <span onclick="newElement()" class="addBtn">Add</span>
       </div>
 
-      <ul id="myUL">
-        <li>Hit the gym</li>
-        <li class="checked">Pay bills</li>
-        <li>Meet Kate</li>
-        <li>Buy eggs</li>
-        <li>Read a book</li>
-        <li>Organize office</li>
-               
+      <ul id="myUL" class="schedule__list">
+        <li class="schedule__item">Hit the gym</li>
+        <li class="checked schedule__item">Pay bills</li>
+        <li class="schedule__item">Meet Kate</li>
+        <li class="schedule__item">Buy eggs</li>
+        <li class="schedule__item">Read a book</li>
+        <li class="schedule__item">Organize office</li>
       </ul>
     </div>
   <script type="text/javascript" src="init.js"></script>
